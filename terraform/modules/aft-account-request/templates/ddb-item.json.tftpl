@@ -1,0 +1,32 @@
+{
+  "id": {
+    "S": ${jsonencode(lookup(control_tower_parameters, "AccountEmail"))}
+  },
+  "control_tower_parameters": {
+    "M": {
+      "AccountEmail"              : { "S": ${jsonencode(lookup(control_tower_parameters, "AccountEmail"))} },
+      "AccountName"               : { "S": ${jsonencode(lookup(control_tower_parameters, "AccountName"))} },
+      "ManagedOrganizationalUnit" : { "S": ${jsonencode(lookup(control_tower_parameters, "ManagedOrganizationalUnit"))} },
+      "SSOUserEmail"              : { "S": ${jsonencode(lookup(control_tower_parameters, "SSOUserEmail"))} },
+      "SSOUserFirstName"          : { "S": ${jsonencode(lookup(control_tower_parameters, "SSOUserFirstName"))} },
+      "SSOUserLastName"           : { "S": ${jsonencode(lookup(control_tower_parameters, "SSOUserLastName"))} }
+    }
+  },
+  "change_management_parameters": {
+    "M" : {
+      "change_reason"       : { "S": ${jsonencode(lookup(change_management_parameters, "change_reason"))} },
+      "change_requested_by" : { "S": ${jsonencode(lookup(change_management_parameters, "change_requested_by"))} }
+    }
+  },
+  %{~ if length(keys(account_tags)) > 0 ~}
+  "account_tags": ${ jsonencode({ S = jsonencode(account_tags) }) },
+  %{~ endif ~}
+  %{~ if length(keys(custom_fields)) > 0 ~}
+  "custom_fields": ${ jsonencode({ S = jsonencode(custom_fields) }) },
+  %{~ endif ~}
+  %{~ if account_customizations_name == "" ~}
+  "account_customizations_name": { "NULL": true }
+  %{~ else ~}
+  "account_customizations_name": { "S": ${jsonencode(account_customizations_name)} }
+  %{~ endif ~}
+}

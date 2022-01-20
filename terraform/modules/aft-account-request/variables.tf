@@ -1,10 +1,10 @@
-variable "account-request-table" {
+variable "account_request_table" {
   type        = string
   description = "name of account-request-table"
   default     = "aft-request"
 }
 
-variable "account-request-table-hash" {
+variable "account_request_table_hash" {
   type        = string
   description = "name of account-request-table hash key"
   default     = "id"
