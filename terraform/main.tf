@@ -5,7 +5,7 @@ module "sandbox" {
     AccountEmail              = "devylawyer@gmail.com"
     AccountName               = "sandbox-aft-new"
     ManagedOrganizationalUnit = "AFT Management Account"
-    SSOUserEmail              = "obitubechiamaka@gmail.com"
+    SSOUserEmail              = "chiamaka@devylaw.ga"
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
   }
