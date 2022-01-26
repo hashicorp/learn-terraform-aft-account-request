@@ -1,5 +1,3 @@
-# just a comment
-# test
 module "sandbox" {
   source = "./modules/aft-account-request"
 
