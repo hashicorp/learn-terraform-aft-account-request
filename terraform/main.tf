@@ -5,9 +5,9 @@ module "sandbox" {
     AccountEmail              = "chiamaka@devylaw.ga"
     AccountName               = "sandbox-aft-new-again"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "chiamaka@devylaw.ga"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserEmail              = "jesus.cambera@bitso.com"
+    SSOUserFirstName          = "Alfredo"
+    SSOUserLastName           = "Cambera"
   }
 
   account_tags = {
