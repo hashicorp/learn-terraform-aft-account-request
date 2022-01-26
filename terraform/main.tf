@@ -3,7 +3,7 @@ module "sandbox" {
 
   control_tower_parameters = {
     AccountEmail              = "chiamaka@devylaw.ga"
-    AccountName               = "sandbox-aft-new"
+    AccountName               = "sandbox-aft-new-again"
     ManagedOrganizationalUnit = "AFT Management Account"
     SSOUserEmail              = "chiamaka@devylaw.ga"
     SSOUserFirstName          = "Sandbox"
