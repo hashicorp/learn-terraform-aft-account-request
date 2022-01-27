@@ -1,12 +1,11 @@
-#test
 module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jeffersongms@hotmail.com"
-    AccountName               = "sandbox-aft-jefferson-01"
+    AccountEmail              = "terraform_test@outlook.com"
+    AccountName               = "test-terraform-import"
     ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "jeffersongms@hotmail.com"
+    SSOUserEmail              = "terraform_test@outlook.com"
     SSOUserFirstName          = "Jefferson"
     SSOUserLastName           = "Costa"
   }
