@@ -13,6 +13,7 @@ module "sandbox" {
   account_tags = {
     "AccountName" = "Sand Box Account"
     "CostCenter"  = "1"
+    "Owner"       = "Viveyk Karri"
   }
 
   change_management_parameters = {
