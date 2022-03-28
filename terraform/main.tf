@@ -24,5 +24,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "testworkload"
+  account_customizations_name = "testworkloads"
 }
