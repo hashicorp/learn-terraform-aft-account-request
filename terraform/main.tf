@@ -60,7 +60,7 @@ module "second_acc" {
   control_tower_parameters = {
     AccountEmail              = "schneidersoft+c@ukr.net"
     AccountName               = "second-aft"
-    ManagedOrganizationalUnit = "Second"
+    ManagedOrganizationalUnit = "Second (ou-oo78-rm73u2fh)"
     SSOUserEmail              = "schneidersoft+c@ukr.net"
     SSOUserFirstName          = "Second"
     SSOUserLastName           = "AFT"
