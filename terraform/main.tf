@@ -26,33 +26,33 @@
 //  account_customizations_name = "sandbox"
 //}
 
-module "first_acc" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "schneidersoft+b@ukr.net"
-    AccountName               = "first-aft"
-    ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "schneidersoft+b@ukr.net"
-    SSOUserFirstName          = "First"
-    SSOUserLastName           = "AFT"
-  }
-
-  account_tags = {
-    "Name" = "First AFT"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "first terraform apply"
-    change_reason       = "first testing"
-  }
-
-  custom_fields = {
-    group = "non-prod"
-  }
-
-  account_customizations_name = "first"
-}
+//module "first_acc" {
+//  source = "./modules/aft-account-request"
+//
+//  control_tower_parameters = {
+//    AccountEmail              = "schneidersoft+b@ukr.net"
+//    AccountName               = "first-aft"
+//    ManagedOrganizationalUnit = "Sandbox"
+//    SSOUserEmail              = "schneidersoft+b@ukr.net"
+//    SSOUserFirstName          = "First"
+//    SSOUserLastName           = "AFT"
+//  }
+//
+//  account_tags = {
+//    "Name" = "First AFT"
+//  }
+//
+//  change_management_parameters = {
+//    change_requested_by = "first terraform apply"
+//    change_reason       = "first testing"
+//  }
+//
+//  custom_fields = {
+//    group = "non-prod"
+//  }
+//
+//  account_customizations_name = "first"
+//}
 
 module "second_acc" {
   source = "./modules/aft-account-request"
