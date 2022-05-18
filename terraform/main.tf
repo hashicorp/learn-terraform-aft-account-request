@@ -72,7 +72,7 @@ module "second_acc" {
 
   change_management_parameters = {
     change_requested_by = "second terraform apply"
-    change_reason       = "second testing"
+    change_reason       = "second testing service catalog try 2"
   }
 
   custom_fields = {
