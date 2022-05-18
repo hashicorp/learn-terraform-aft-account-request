@@ -53,3 +53,31 @@ module "first_acc" {
 
   account_customizations_name = "first"
 }
+
+module "second_acc" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "schneidersoft+c@ukr.net"
+    AccountName               = "second-aft"
+    ManagedOrganizationalUnit = "Second"
+    SSOUserEmail              = "schneidersoft+c@ukr.net"
+    SSOUserFirstName          = "Second"
+    SSOUserLastName           = "AFT"
+  }
+
+  account_tags = {
+    "Name" = "Second AFT"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "second terraform apply"
+    change_reason       = "second testing"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "second"
+}
