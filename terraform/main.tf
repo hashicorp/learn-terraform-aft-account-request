@@ -1,27 +1,28 @@
-module "sandbox" {
+module "srikant_sarwa" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    AccountEmail              = "srikant.sarwa+aws@sysdig.com"
+    AccountName               = "Srikant-Sarwa-AWS-Dev"
+    ManagedOrganizationalUnit = "CS Accounts"
+    SSOUserEmail              = "srikant.sarwa+aws@sysdig.com"
+    SSOUserFirstName          = "Srikant"
+    SSOUserLastName           = "Sarwa"
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "CS Owner" = "Srikant Sarwa",
+    "CS Manager" = "Mohammed Ali"
   }
 
   change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_requested_by = "Michael Scholl"
+    change_reason       = "Initial provisioning of Srikant Sarwa's AWS Dev account."
   }
 
   custom_fields = {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "srikant_sarwa"
 }
