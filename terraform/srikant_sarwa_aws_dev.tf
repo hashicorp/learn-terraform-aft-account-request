@@ -24,5 +24,5 @@ module "srikant_sarwa" {
     group = "non-prod"
   }
 
-  account_customizations_name = "srikant_sarwa"
+  account_customizations_name = "cs-dev"
 }
