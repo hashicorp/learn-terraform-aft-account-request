@@ -1,5 +1,5 @@
 module "sandbox" {
-  source = "./modules/aft-account-request"
+  source = "git@github.com:thumbtack/aws-modules.git///aft-account-request/terraform/modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "<ACCOUNT EMAIL>"
