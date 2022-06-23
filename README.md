@@ -1,7 +1,7 @@
-Introduction
+# Introduction
 This repo stores the Account Requests for Control Tower Account Factory for Terraform. This is where you place requests for accounts that you would like provisioned and managed by the AFT solution.
 
-Request a new Account
+# Request a new Account
 AFT follows a GitOps model for creating and updating AWS Control Tower managed accounts. Account Request Terraform file should be created to provide necessary inputs to trigger AFT pipeline workflow for account vending. You can reference example Account Request you should have pushed to your chosen git repository for storing AFT Account Requests (link to instructions in deployment).
 
 When account provisioning or updating is complete, the AFT pipeline workflow continues and runs AFT Account Provisioning Framework and Customizations steps.
@@ -32,12 +32,12 @@ custom_fields captures custom keys and values. As a customer you may want to col
 
 account_customizations_name (Optional) Name of a customer-provided Account Customization to be applied when the account is provisioned.
 
-Update Existing Account
+# Update Existing Account
 You may update AFT provisioned accounts by updating previously submitted Account Requests. Git push action triggers the same Account Provisioning workflow to process account update request.
 
 AFT supports updating of all non control_tower_parameters inputs and ManagedOrganizationalUnit of control_tower_parameters input. Remaining control_tower_parameters inputs cannot be changed.
 
-Submit Multiple Account Requests
+# Submit Multiple Account Requests
 Although AWS Control Tower Account Factory can process single request at any given time, AFT pipeline allows you to submit multiple Account Requests and queues all the requests to be processed by AWS Control Tower Account Factory in FIFO order.
 
 You can create Account Request Terraform file per account or cascade multiple requests in a single Terraform file.
