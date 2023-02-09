@@ -12,6 +12,7 @@ module "sandbox" {
 
   account_tags = {
     Project = "AFT"
+    Test = "yes"
   }
 
   change_management_parameters = {
