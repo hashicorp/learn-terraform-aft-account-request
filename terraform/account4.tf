@@ -3,8 +3,8 @@ module "aft-act04" {
 
   control_tower_parameters = {
     AccountEmail              = "rvadde+ymus-vend121203@skepticservices.com"
-    AccountName               = "AFT_Vended_121204"
-    ManagedOrganizationalUnit = "AFT_Mgmt"
+    AccountName               = "AFT_Vended_121301"
+    ManagedOrganizationalUnit = "ou-ty2s-ljetjmp9"
     SSOUserEmail              = "rajesh.vadde@trace3.com"
     SSOUserFirstName          = "Raj"
     SSOUserLastName           = "V"
