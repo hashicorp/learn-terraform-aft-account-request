@@ -2,9 +2,9 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "rvadde+ymus-vend121201@skepticservices.com"
-    AccountName               = "AFT_Vended_121201"
-    ManagedOrganizationalUnit = "Workloads/Non-Prod"
+    AccountEmail              = "rvadde+ymus-vendmain1213@skepticservices.com"
+    AccountName               = "AFT_Vend_Main_1213"
+    ManagedOrganizationalUnit = "ou-ty2s-ljetjmp9"
     SSOUserEmail              = "rajesh.vadde@trace3.com"
     SSOUserFirstName          = "Raj"
     SSOUserLastName           = "V"
