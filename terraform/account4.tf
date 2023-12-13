@@ -1,10 +1,10 @@
-module "aft-act02" {
+module "aft-act04" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
     AccountEmail              = "rvadde+ymus-vend121203@skepticservices.com"
-    AccountName               = "AFT_Vended_121203"
-    ManagedOrganizationalUnit = "Workloads/Non-Prod"
+    AccountName               = "AFT_Vended_121204"
+    ManagedOrganizationalUnit = "AFT_Mgmt"
     SSOUserEmail              = "rajesh.vadde@trace3.com"
     SSOUserFirstName          = "Raj"
     SSOUserLastName           = "V"
